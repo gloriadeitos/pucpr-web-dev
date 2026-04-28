@@ -1,0 +1,10 @@
+/* Background and text color applied globally to ensure Home matches other pages */
+html, body, #root {
+	height: 100%;
+}
+body {
+	margin: 0;
+	background-color: #0f172a; /* dark gray similar to bg-gray-950 */
+	color: #e5eef8; /* light text */
+	font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}

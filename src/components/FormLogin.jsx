@@ -35,13 +35,13 @@ class FormLogin extends Component {
   render(){
     return(
       <div className="min-h-screen bg-gray-950 flex items-center justify-center">
-        <div className="bg-gray-900 border border-gray-800 p-8 rounded-lg shadow-2xl w-96">
-          <h1 className="text-2xl font-bold text-center text-gray-100 mb-6">
+        <div className="bg-gray-900 border border-gray-800 p-6 rounded-lg shadow-2xl w-80">
+          <h1 className="text-xl font-bold text-center text-gray-100 mb-4">
             <FontAwesomeIcon icon={faSignInAlt} className="mr-2" />
             Login
           </h1>
           
-          <div className="mb-4">
+          <div className="mb-3">
             <label className="block text-gray-300 text-sm font-bold mb-2">
               <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
               E-mail
@@ -49,13 +49,13 @@ class FormLogin extends Component {
             <input 
               type="email" 
               placeholder="Digite seu e-mail"
-              className="w-full px-3 py-2 border border-gray-700 bg-gray-800 text-gray-100 placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-1.5 border border-gray-700 bg-gray-800 text-gray-100 placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={this.state.email}
               onChange={this.handleEmailChange}
             />
           </div>
           
-          <div className="mb-6">
+          <div className="mb-4">
             <label className="block text-gray-300 text-sm font-bold mb-2">
               <FontAwesomeIcon icon={faLock} className="mr-2" />
               Senha
@@ -63,7 +63,7 @@ class FormLogin extends Component {
             <input 
               type="password" 
               placeholder="Digite sua senha"
-              className="w-full px-3 py-2 border border-gray-700 bg-gray-800 text-gray-100 placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-1.5 border border-gray-700 bg-gray-800 text-gray-100 placeholder-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={this.state.senha}
               onChange={this.handleSenhaChange}
             />
